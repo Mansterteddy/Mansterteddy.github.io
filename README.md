@@ -1,2 +1,2 @@
 # mansterteddy.github.io
-My personal project description webpage
+My personal project description webpage.

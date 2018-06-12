@@ -21,10 +21,10 @@
       <header>
         <h1>Manster's Homepage</h1>
         <h2>About Me</h2>
-        <p>My name is Zhang Yuan, I am interested in Computer Graphics, Computer Vision and Computational Photography, especially the applications based on these technologies which can be used in movie and game industry. I got my Bachelor degree with Honor from Sichuan University in 2015. Now I am working on my Master degree in Institute of Computing Technology, Chinese Academy of Sciences, Beijing.
+        <p>My name is Zhang Yuan, I am interested in Computer Graphics and Artificial Intelligence, especially the applications based on these technologies which can be used in movie and game industry. I got my Bachelor degree with Honor from Sichuan University in 2015. Now I am working on my Master degree in Institute of Computing Technology, Chinese Academy of Sciences, Beijing. After july 2018, I'll join Microsoft STCA.
         </p>
         <h2>About Website Content</h2>
-        <p>I share my codes and articles about Computational Photography, Computer Graphics, Puzzles, Linear Algebra and Optimizition Methods on GitHub, please feel free to contact me if you need.</p>
+        <p>I present my works here, share my open source projects on GitHub and artices on bitcron, please feel free to contact me if you need.</p>
         <h2>Contact</h2>
         <p><em>Mail: <a href="mailto:zhangyuan@ict.ac.cn">zhangyuan@ict.ac.cn</a>.</em></p>
         <p class="view"><a href="http://github.com/mansterteddy">View My Projects on GitHub </a></p>
@@ -35,7 +35,7 @@
         <h1>The Quotation</h1>
 
         <blockquote>
-        <p>The longing for love, the search for knowledge, and unbearable pity for the suffering of mankind. These passions, like great winds, have blown me hither and thither, in a wayward course, over a great ocean of anguish. By Bertrand Russell</p>
+        <p>The longing for love, the search for knowledge, and unbearable pity for the suffering of mankind. These passions, like great winds, have blown me hither and thither, in a wayward course, over a great ocean of anguish. From Bertrand Russell.</p>
         </blockquote>
 
         <blockquote>
@@ -45,57 +45,33 @@
         <h1>Manster's Project</h1>
 
         <h2>Project Human</h2>
-        <p>This is my major project since the senior year in college. This project is divided into several steps, including Human Segmentation in Images, Parameterized Human Model, Model Registration based on RGB-D Camera,  Pose Rerendering for Human Images.</p>
+        <p>This is my major project during my grauate program. This project is divided into several parts, including Human Segmentation in Images, Parameterized Human Model, Model Registration based on RealSense.</p>
         
         <h3>Human Segmentation in Images</h3>
-        <p>To extract human contour in still images, we propose a human contour extraction method based on skeleton matching. Skeleton key points are points representing human skeleton in images. Through skeleton key points and color information from images, using human body morphology as prior knowledge, we find optimal human contour key points corresponding to skeleton key points by constructing hidden markov model. Few human contour key points can generate reasonable human contour. Then we use hermite interpolation to connect these key points and obtain human contour. Through experiments, our method can extract reasonable human contour in simple scene, compared to previous methods, our method has a higher speed, and obtains better results in complicated scene. The article is published on ChinaVR.</p>
+        <p>To extract human contour in still images, we propose a human contour extraction method based on skeleton matching. Skeleton key points are points representing human skeleton in images. Through skeleton key points and color information from images, using human body morphology as prior knowledge, we find optimal human contour key points corresponding to skeleton key points by constructing hidden markov model. Few human contour key points can generate reasonable human contour. Then we use hermite interpolation to connect these key points and obtain human contour. Through experiments, our method can extract reasonable human contour in simple scene, compared to previous methods, our method has a higher speed, and obtains better results in complicated scene. Related article is published on ChinaVR: Human Contour Extraction Based on Skeleton Matching.</p>
         <img src = "chinavr.png" src = "chinavr" />
 
         <h3>Parameterized Human Model</h3>
         <p>I implement SIGGRAPH Paper, SCAPE: Shape Completion and Animation of People using Python. After applying Linear Regression and Principal Component Analysis, we can generate reasonable human model using parameters.</p> 
         <img src = "scape.PNG" src = "scape" />
 
-        <h3>Model Registration based on RGB-D Camera</h3>
-        <p>In this step, I write some codes and materials about registration algorithms, registration is an useful and interesting method used in Computer Graphics and related areas. I provide the implementation of ICP and some state-of-art registration methods.</p>
+        <h3>Model Registration based on RealSense</h3>
+        <p>We build a pre-processing system for human depth acquisition using RealSense,it can be applied in scenes such as human modeling and measurement effectively. Related paper is coming soon. </p>
+        <img src = "pipelineDepthRestoration.JPG" src = "pipeline" />
+        <!--
         <aside>
         <img src = "GIF.gif" src = "non-rigid registration" height = 200>
         <img src = "GIF1.gif" src = "rigid registration" height = 200>
         </aside>
-
-        <h3>Model-based Measurement</h3>
-        <p>For reconstructed human model, I apply Elastic Net to measure human parameters.
-        </p>
-  
-
-        <h3>Pose Rerendering for Human Images</h3>
-        <p>For images including human, I try to change human pose and rerender image contents. Thanks to Generative Adversarial Networks, I make some progresses.</p>
-        <img src = "pose_study.jpg" src = "pose_study" />
+        -->
 
         <h2>Project Camera Sync</h2>
-        <p>This project is my favorite work, we propose a perfect camera sync method on cheap CCD camera, related paper is published on Sensors. </p>
+        <p>This project is my favorite work, we propose a perfect camera sync method on cheap CCD camera, related paper is published on Sensors: Stroboscope Based Synchronization of Full Frame CCD Sensors. </p>
         <img src = "sync.PNG" src = "camera sync">
 
         <h2>Project Linear Algebra Solver</h2>
         <p>This project includes some materials and codes about linear algebra and its applications. For linear algebra, I recommend Matrix Analysis and Applied Linear Algebra by Carl D. Meyer, I provide some implementations of matrix decomposition methods and their corresponding applications. </p>
         <img src = "SVD.PNG" src = "SVD Compression">
-
-
-        <h2>Project Graphics</h2>
-
-        <p>This project includes some codes about computer graphics, such as Ray Tracing which is the foundation of video games, OpenGL and so on. I provide codes to record my implementation process.</p>
-        <img src = "cube.jpg" src = "cube" />
-
-
-        <h2>Cracking the Coding Interview</h2>
-        <p>This project includes some codes about problems of Cracking the Coding Interview, I add some interesting problems and cool codes I have met.</p>
-
-        <h2>Computational Photography Work</h2>
-        <p>This project includes some codes about Computational Photography projects, these projects are mainly inspired by papers on CVPR, ICCV, ECCV and SIGGRAPH.
-        <img src = "cp1.PNG" src = "dehaze">
-        <img src = "cp2.PNG" src = "pencil">
-        <img src = "cp3.PNG" src = "matting">
-
-
 
       </section>
     </div>
